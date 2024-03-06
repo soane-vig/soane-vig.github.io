@@ -1,0 +1,238 @@
+@font-face {
+    font-family: 'Space mono';
+    src: url('fonts/space-mono-regular.woff2');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Space mono';
+    src: url('fonts/space-mono-regular.woff2');
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aktiv grotesk';
+    src: url('fonts/aktivgrotesk-xbold-.woff2');
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aktiv grotesk';
+    src: url('fonts/aktiv-grotesk-regular.woff2');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aktiv grotesk';
+    src: url('fonts/aktiv-grotesk-thin.woff2');
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+}
+
+
+body{
+    background: rgb(249, 243, 233);
+    color: #19387f;
+    font-family: sans-serif;
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    color: white; 
+    font-size: 18px;
+    font-family: "Aktiv grotesk", sans-serif;
+    font-weight: 700;
+}
+
+h2{
+    font-weight: 700;
+    border-bottom: 1px solid #19387f;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+h3{
+    font-weight: 700;
+    margin-bottom: -12px;
+    font-size: 16px;
+
+}
+
+h4{
+    font-weight: 400;
+    font-size: 11px;
+    margin-bottom: 20px;
+}
+
+p{
+    font-family: 'Aktiv grotesk';
+    font-weight: 200;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+
+/* les différentes classes */
+
+p.competence{
+    font-size: 14px;
+    font-weight: 400;
+    max-width: 550px;
+    margin-bottom: 20px;
+}
+
+
+
+
+.header{
+    display: grid;
+    background: #19387f;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+}
+
+.header.sticky{
+    position: sticky; 
+    top : 0px;
+}
+.bandeau.sticky{
+    position: sticky; 
+    top : 45px;
+}
+
+
+
+.nav a{
+    color: white; 
+    font-size: 14px;
+    font-family: "Aktiv grotesk";
+    font-weight: 200;
+    text-decoration: none;
+}  
+
+.nav a.a-propos{
+    font-weight: 400;
+}
+
+/* .link-project{
+    display: block;
+    text-decoration: none;
+    padding: 8px;
+    color: white;
+    font-size: 18px; }*/
+
+.bandeau{
+    margin-bottom: 40px;
+}
+
+.bandeau a.link-bandeau { 
+    text-decoration: none;
+    padding: 2px 15px;
+    color: #19387f;
+    background: white;
+    font-size: 15px;
+    border: 2px solid #19387f;
+    border-radius: 40px;
+    display: inline-block;
+    margin: 0 0 7px 0;
+}
+
+.bandeau a.link-bandeau.link1{
+    color: white; 
+    background: #19387f;
+    border: 2px solid #19387f;
+
+}
+
+.bandeau a.link-bandeau:hover{
+    color: white; 
+    background: #19387f;
+    border: 2px solid #19387f;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    gap: 20px;
+}
+
+.grid .bloc1{
+    max-width: 750px;
+    min-width: 250px;
+}
+
+.grid .bloc2{
+    background: white;
+    color: #19387f;
+    padding: 15px;
+}
+
+.footer{
+    margin-top: 100px;
+    font-size: 10px;
+}
+
+.grid-work{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+    background: white;
+    padding: 15px;
+    margin-bottom: 100px
+}
+
+.item1{
+    margin-bottom: 15px;
+    border-bottom: 1px solid #19387f;
+}
+
+video,img{
+    max-width: 100%;
+    height:auto;
+}
+
+video{
+    max-height: 1000px;
+}
+
+.grid-work img.item2{
+    grid-column: 1/-1;
+}
+
+.grid-work video.item2{
+    grid-column: 1/-1;
+}
+
+
+
+
+
+
+
+
+
+
