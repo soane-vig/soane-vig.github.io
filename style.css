@@ -38,7 +38,9 @@
     font-display: swap;
 }
 
-
+html,body{
+    scroll-behavior: smooth;
+}
 body{
     background: rgb(249, 243, 233);
     color: #19387f;
@@ -46,9 +48,15 @@ body{
     font-family: "Space Mono", monospace;
     font-weight: 400;
     font-style: normal;
-    max-width: 1100px;
+    max-width: 1300px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 0 15px 15px 15px;
+}
+
+.footer{
+    padding-top: 300px;
+    font-size: 10px;
+    padding-bottom: 50px;
 }
 
 a{
@@ -65,42 +73,51 @@ h1{
 h2{
     font-weight: 700;
     border-bottom: 1px solid #19387f;
-    font-size: 16px;
-    margin-bottom: 12px;
+    font-size: 22px;
+    padding-top: 110px;
+    margin-bottom: 3px;
 }
 
 h3{
     font-weight: 700;
-    margin-bottom: -12px;
+    /* margin-bottom: -12px; */
     font-size: 16px;
-
+    margin-bottom: -5px;
 }
 
 h4{
     font-weight: 400;
-    font-size: 11px;
-    margin-bottom: 20px;
+    font-size: 13px;
+    margin-bottom:15px;
+}
+
+
+h5{
+    font-weight: 700;
+    border-bottom: 1px solid #19387f;
+    font-size: 16px;
+    margin-bottom: 12px;
+
 }
 
 p{
     font-family: 'Aktiv grotesk';
     font-weight: 200;
-    font-size: 16px;
     margin-bottom: 40px;
 }
-
 
 /* les différentes classes */
 
 p.competence{
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 400;
     max-width: 550px;
     margin-bottom: 20px;
 }
+p.contact{
+    font-size: 18px;
 
-
-
+}
 
 .header{
     display: grid;
@@ -120,8 +137,6 @@ p.competence{
     position: sticky; 
     top : 45px;
 }
-
-
 
 .nav a{
     color: white; 
@@ -151,8 +166,8 @@ p.competence{
     padding: 2px 15px;
     color: #19387f;
     background: white;
-    font-size: 15px;
-    border: 2px solid #19387f;
+    font-size: 16px;
+    border: 1px solid #19387f;
     border-radius: 40px;
     display: inline-block;
     margin: 0 0 7px 0;
@@ -171,27 +186,34 @@ p.competence{
     border: 2px solid #19387f;
 }
 
+/* page de cv */
 .grid{
     display: grid;
-    grid-template-columns: 1fr 250px;
-    gap: 20px;
+    grid-template-columns: 2fr 3fr;
+    gap: 10px;
 }
 
 .grid .bloc1{
-    max-width: 750px;
-    min-width: 250px;
+    padding: 5px;
+    max-width: 550px;
 }
 
 .grid .bloc2{
+    max-width: 220px;
     background: white;
     color: #19387f;
-    padding: 15px;
+    padding: 10px;
 }
 
-.footer{
-    margin-top: 100px;
-    font-size: 10px;
+.item1{
+    font-size: 14px;
 }
+
+
+
+/* page des travaux dans les cathégories*/
+
+
 
 .grid-work{
     display: grid;
@@ -202,30 +224,159 @@ p.competence{
     align-items: center;
     background: white;
     padding: 15px;
-    margin-bottom: 100px
+    margin-bottom: 70px
 }
-
-.item1{
-    margin-bottom: 15px;
-    border-bottom: 1px solid #19387f;
-}
-
-video,img{
-    max-width: 100%;
-    height:auto;
-}
-
-video{
-    max-height: 1000px;
-}
-
 .grid-work img.item2{
     grid-column: 1/-1;
+}
+.grid-work img.item4{
+    max-height: 1000px;
 }
 
 .grid-work video.item2{
     grid-column: 1/-1;
 }
+
+a.item3{
+    display: block;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #19387f;
+    color: #19387f; 
+}
+
+video,img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+video{
+    max-height: 1000px;
+}
+
+/* page d'accueil réglages */
+
+.grid-presente a{
+    display: grid;
+    color: white;
+    background: #19387f;
+    justify-items: start;
+    align-items: start;
+}
+.grid-presente a span, .grid-presente  a img{
+    grid-column: 1 fr;
+    grid-row: 1 fr;
+    transition: 0.4s;
+}
+
+.grid-presente a span{
+    padding: 15px;
+    opacity: 0%;
+}
+
+.grid-presente a.img{
+    display: block;
+}
+
+.grid-presente a:hover img{
+    opacity: 0%;
+}
+.grid-presente a:hover span{
+    opacity: 100%;
+}
+
+
+/* version mobile */ 
+.grid-presente{
+    display: grid;
+    gap: 0px;
+    grid-template-rows: auto;
+    background: white;
+    /* padding: 15px; */
+    margin-bottom: 40px;
+    justify-items: start;
+    align-items: start;
+    padding: 15px;
+}
+
+.grid p{
+    font-size: 12px
+}
+.grid p.competence{
+    font-size: 9.5px;
+}
+.grid h3{
+    font-size: 12px;
+}
+
+.grid h4{
+    padding: 0 0 0 10px;
+    font-size: 9px;
+}
+
+sup{
+    line-height: 1;
+}
+
+/* version desktop */ 
+@media (min-width:620px){
+    .grid-presente{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .item6{
+        grid-column: span 2;
+    }
+    .item7{
+        grid-row: span 2;
+    }
+ 
+    .grid{
+        grid-template-columns: 1fr 3fr;
+        gap: 15px;
+    }
+    .grid p{
+        font-size: 14px
+    }
+    .grid p.competence{
+        font-size: 14px;
+    }
+    .grid h3{
+        font-size: 20px;
+    }
+    .grid h4{
+        font-size:13px;
+    }
+    .item1{
+        font-size: 16px;
+    }
+
+}
+
+@media (min-width:1000px){
+    .grid-presente{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .grid p{
+        font-size: 17px
+    }
+    .grid p.competence{
+        font-size: 15px;
+    }
+    .item1{
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
