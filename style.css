@@ -319,6 +319,17 @@ sup{
     line-height: 1;
 }
 
+h2.contact{
+    
+}
+
+p.contact{
+    font-size: 10px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+
 /* version desktop */ 
 @media (min-width:620px){
     .grid-presente{
@@ -342,13 +353,20 @@ sup{
         font-size: 14px;
     }
     .grid h3{
-        font-size: 20px;
+        font-size: 16px;
     }
     .grid h4{
         font-size:13px;
     }
     .item1{
         font-size: 16px;
+    }
+    h5{
+        font-size: 18px;
+    }
+    p.contact{
+        font-size: 15px;
+        font-weight: 400;
     }
 
 }
@@ -360,11 +378,21 @@ sup{
     .grid p{
         font-size: 17px
     }
+    .grid h3{
+        font-size: 18px;
+    }
+    h5{
+        font-size: 20px;
+    }
     .grid p.competence{
         font-size: 15px;
     }
     .item1{
+        font-size: 17px;
+    }
+    p.contact{
         font-size: 18px;
+        font-weight: 400;
     }
 }
 
